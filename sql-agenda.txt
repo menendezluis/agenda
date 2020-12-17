@@ -1,0 +1,85 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.3
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 16-12-2020 a las 19:28:56
+-- Versión del servidor: 10.4.14-MariaDB
+-- Versión de PHP: 7.2.34
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `agenda`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `contactos`
+--
+
+CREATE TABLE `contactos` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(30) NOT NULL,
+  `apellidos` varchar(30) NOT NULL,
+  `telemovil` int(9) NOT NULL,
+  `emailprivado` varchar(30) NOT NULL,
+  `direccion` varchar(50) NOT NULL,
+  `pais` varchar(20) NOT NULL,
+  `fechanac` date NOT NULL,
+  `foto` varchar(30) DEFAULT NULL,
+  `latitud` float(15,7) DEFAULT NULL,
+  `longitud` float(15,7) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `contactos`
+--
+
+INSERT INTO `contactos` (`id`, `nombre`, `apellidos`, `telemovil`, `emailprivado`, `direccion`, `pais`, `fechanac`, `foto`, `latitud`, `longitud`) VALUES
+(2, 'pepe', 'papa', 6123, 'cd@um.es', 'calle pepa', 'spain', '2019-06-02', '', NULL, NULL),
+(3, 'pepe', 'papa', 6123456, 'cd@um.77', 'calle pepa', 'spain', '2019-06-02', '', NULL, NULL),
+(5, 'a', 'b', 50, 'lm@gua.com', 'cuarta calle 2456 zona 1', 'guatemala', '1988-05-30', 'LOGO VK (6).png', NULL, NULL),
+(6, 'luis', 'gonzalez', 8888888, 'jajaja@yahoo', '11 calle 8', 'guatemala', '2020-01-01', NULL, NULL, NULL),
+(7, 'david', 'gonzalez', 29018010, 'lll@aki', 'zona 19 guatemala', 'guatemala', '2008-08-09', NULL, NULL, NULL),
+(8, 'david', 'perez', 29018010, 'lll@aki', 'zona 20 guatemala', 'guatemala', '2008-08-09', NULL, NULL, NULL),
+(9, 'kohen', 'garcia', 29018010, 'kqp@aki', 'zona 23 guatemala', 'guatemala', '2008-08-09', NULL, NULL, NULL),
+(10, 'manuel', 'gonzalez', 999999, 'luis@wwww', 'zona 22', 'guatemala', '2002-02-02', NULL, NULL, NULL),
+(11, 'jesus', 'morales', 888888, 'lll@aki', 'zona 21', 'guatemala', '2008-08-08', NULL, 15.7189617, -88.6048203),
+(12, 'david', 'molina', 5901801, 'qqqq@kkkk', 'el progreso', 'zacapa', '2020-01-08', NULL, 15.7189617, -88.6048203),
+(13, 'carlos', 'perez', 55555, 'iiiqqq@jjj', 'km93', 'uganda', '2003-02-01', NULL, 15.7189617, -88.6048203),
+(14, 'Luis', 'Menendez', 4444, 'lmenendez.1@gmail.com', '4 Calle 16-10 Zona 15', 'Guatemala', '2020-06-09', NULL, 15.7289429, -88.6031342);
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `contactos`
+--
+ALTER TABLE `contactos`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `contactos`
+--
+ALTER TABLE `contactos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

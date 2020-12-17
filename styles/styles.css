@@ -1,0 +1,51 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(121, 9, 9) 35%, rgb(255, 0, 0) 100%);
+	float:center;
+	margin:auto;
+	align:center;
+	width:98%;
+	text-align:center;
+}
+table{
+	margin:0 auto;
+	size:1em;	
+
+}
+.th{
+	background-color:rgb(202, 212, 202);
+	font-weight:bold;
+}
+td{
+	background-color: ghostwhite;
+	font-size: .82em;
+}
+td.left{
+	text-align:left;
+}
+td.right{
+	text-align:right;
+}
+h1 {
+	font-size: 5em;
+	background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(182, 182, 182));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+  label{
+	  background-color: aliceblue;
+  }
+  h2 {
+	font-size: 2em;
+	background: -webkit-linear-gradient(rgb(250, 156, 156), rgb(182, 182, 182));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+  form {
+	  font-size: .80em;
+	  margin:5%;
+  }
